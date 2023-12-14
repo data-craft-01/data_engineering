@@ -1,12 +1,11 @@
-# **Salesforce Integration with Azure**
-
-1. **Integrating Salesforce API with Azure Data Factory**
+# **Integrating Salesforce API with Azure Data Factory**
+****
+## 1. **Creating the Data pipeline** 
 Developing data pipelines and data products by integrating Salesforce API with Azure Data Factory involves several detailed steps. Below is a comprehensive, step-by-step guide:
 
 #### Prerequisites:
-1. Pre-requisite
+Accounts in place
    - Salesforce Account(with necessary permissions or create a Salesforce developer account if needed.
-2. Azure Account:
    - Account with access to Azure Data Factory.
 
 ### How to create a data pipeline?
@@ -63,9 +62,10 @@ Developing data pipelines and data products by integrating Salesforce API with A
    a. Document the pipeline configurations, dataset structures, and any specific configurations.  
    b. Include information on credentials and access management.  
 
-2. **Implementing data mapping during building a pipeline to move Salesforce data to Azure**
+****
+## 2. **Implementing data mapping during building a pipeline to move Salesforce data to Azure** 
 
-### Step 1: Understand the Salesforce Data Structure
+#### Step 1: Understand the Salesforce Data Structure
 
 1. **Identify Objects:**
    - Understand the Salesforce objects you want to migrate.
@@ -75,7 +75,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
    - Take note of the fields within each object.
    - Understand data types (text, number, date) and any relationships.
 
-### Step 2: Define Azure Data Storage
+#### Step 2: Define Azure Data Storage
 
 1. **Choose Azure Storage:**
    - Determine the Azure data storage solution (Azure SQL Database, Azure Data Lake Storage, etc.).
@@ -83,7 +83,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
 2. **Create Tables/Containers:**
    - Create tables or containers in Azure corresponding to Salesforce objects.
 
-### Step 3: Data Mapping
+#### Step 3: Data Mapping
 
 1. **Field-Level Mapping:**
    - Map Salesforce fields to Azure table/container columns.
@@ -92,7 +92,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
 2. **Handle Relationships:**
    - If there are parent-child relationships in Salesforce, map them to corresponding relationships in Azure.
 
-### Step 4: Choose Integration Tool
+#### Step 4: Choose Integration Tool
 
 1. **Select Integration Service:**
    - Choose an integration service compatible with both Salesforce and Azure (e.g., Azure Data Factory, Informatica, Talend).
@@ -100,7 +100,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
 2. **Configure Source and Destination Connections:**
    - Set up connections to Salesforce as the source and Azure as the destination.
 
-### Step 5: Build Data Pipeline
+#### Step 5: Build Data Pipeline
 
 1. **Create Pipeline:**
    - Use the chosen integration tool to create a data pipeline.
@@ -111,7 +111,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
 3. **Apply Data Mapping:**
    - Implement the data mapping by configuring field-level mappings within the pipeline.
 
-### Step 6: Handle Incremental Loads
+#### Step 6: Handle Incremental Loads
 
 1. **Identify Changes:**
    - Determine how to identify new or updated records in Salesforce since the last migration.
@@ -119,7 +119,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
 2. **Implement Incremental Logic:**
    - Modify the pipeline to handle incremental loads by only migrating changed records.
 
-### Step 7: Test the Pipeline
+#### Step 7: Test the Pipeline
 
 1. **Run Sample Data:**
    - Run the pipeline with a subset of data for testing purposes.
@@ -128,7 +128,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
    - Ensure that data is successfully transferred from Salesforce to Azure.
    - Check for accurate data mapping and any errors in the process.
 
-### Step 8: Monitor and Schedule
+#### Step 8: Monitor and Schedule
 
 1. **Set Up Monitoring:**
    - Configure monitoring to track the pipeline's performance and errors.
@@ -136,7 +136,7 @@ Developing data pipelines and data products by integrating Salesforce API with A
 2. **Schedule Pipeline:**
    - Set up a schedule for running the pipeline, considering Salesforce API limits and data freshness requirements.
 
-### Step 9: Document the Solution
+#### Step 9: Document the Solution
 
 1. **Documentation:**
    - Document the data mapping, pipeline configurations, and any transformation logic applied.
